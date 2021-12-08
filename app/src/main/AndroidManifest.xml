@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.professionals">
+    package="com.example.pizzatime">
 
     <application
         android:allowBackup="true"
@@ -10,13 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Professionals">
         <activity
-            android:name=".ListActivity"
+            android:name="com.example.pizzatime.ArmaPizza"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.pizzatime.Gestion"
+            android:exported="true" />
+        <activity
+            android:name="com.example.pizzatime.ListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.pizzatime.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

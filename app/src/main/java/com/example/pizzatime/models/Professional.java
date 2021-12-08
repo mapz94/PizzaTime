@@ -1,4 +1,4 @@
-package com.example.professionals.models;
+package com.example.pizzatime.models;
 
 import androidx.annotation.NonNull;
 

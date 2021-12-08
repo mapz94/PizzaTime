@@ -21,13 +21,16 @@
                 android:layout_height="wrap_content"
                 android:padding="24dp">
                 <ListView
-                    android:id="@+id/profesionalList"
+                    android:id="@+id/pizzaList"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice"
+                    android:listSelector="@android:color/darker_gray"/>
                 <Button
+                    android:enabled="false"
                     android:layout_alignParentBottom="true"
                     android:id="@+id/deleteButton"
-                    android:text="Eliminar profesional"
+                    android:text="Eliminar Pizza"
                     android:backgroundTint="#ff0000"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>

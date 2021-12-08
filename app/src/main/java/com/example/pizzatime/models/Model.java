@@ -1,4 +1,4 @@
-package com.example.professionals.models;
+package com.example.pizzatime.models;
 
 @Table(table_name = "")
 public abstract class Model {

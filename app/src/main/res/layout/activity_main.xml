@@ -12,6 +12,70 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginVertical="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:clipChildren="false">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:src="@drawable/logo"
+                        android:layout_width="256dp"
+                        android:layout_height="128dp"/>
+                    <TextView
+                        android:layout_marginBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Tenemos lo que buscas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                app:cardCornerRadius="30dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:id="@+id/fbButton"
+                        android:background="@null"
+                        android:src="@drawable/fbicon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <ImageButton
+                        android:id="@+id/inButton"
+                        android:background="@null"
+                        android:src="@drawable/instaicon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <ImageButton
+                        android:id="@+id/twButton"
+                        android:background="@null"
+                        android:src="@drawable/twiticon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <ImageButton
+                        android:id="@+id/ytButton"
+                        android:background="@null"
+                        android:src="@drawable/yticon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,35 +85,25 @@
                 android:layout_height="wrap_content"
                 android:padding="24dp"
                 android:orientation="vertical">
-                <EditText
-                    android:id="@+id/nameEdit"
-                    android:hint="Ingrese Nombre"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-                <EditText
-                    android:id="@+id/salaryEdit"
-                    android:hint="Ingrese Salario"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-                <EditText
-                    android:id="@+id/professionEdit"
-                    android:hint="Ingrese Profesión"
+                <Button
+                    android:id="@+id/addPizza"
+                    android:backgroundTint="#ff8800"
+                    android:text="Gestión Pizza"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <Button
-                    android:id="@+id/commitButton"
-                    android:layout_marginTop="48dp"
-                    android:backgroundTint="#52BE80"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Guardar en Firebase"
-                    />
-                <Button
-                    android:id="@+id/listButton"
-                    android:text="Listado en firebase"
-                    android:backgroundTint="#2296F3"
+                    android:id="@+id/listPizza"
+                    android:backgroundTint="#22DD77"
+                    android:text="Listado Pizza"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/selectPizza"
+                    android:text="Arma tu pizza"
+                    android:backgroundTint="#227fEE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.professionals.models;
+package com.example.pizzatime.models;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

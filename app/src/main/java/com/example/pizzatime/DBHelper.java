@@ -1,4 +1,4 @@
-package com.example.professionals;
+package com.example.pizzatime;
 
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -8,7 +8,7 @@ public class DBHelper {
 
     public DBHelper(){
         if (this.instance == null){
-            this.instance = FirebaseDatabase.getInstance("https://professionals-bbd4f-default-rtdb.firebaseio.com/");
+            this.instance = FirebaseDatabase.getInstance("https://pizzatime-2b0b6-default-rtdb.firebaseio.com/");
         }
     }
 
