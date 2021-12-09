@@ -120,7 +120,9 @@ public class DAO {
                     try{
                         for (DataSnapshot postsnapshot : dataSnapshot.getChildren()) {
                             String key = postsnapshot.getKey();
-                            dataSnapshot.getRef().removeValue();
+                            if(key.equals(model.getId())){
+                                postsnapshot.getRef().removeValue();
+                            }
                         }
                     }catch (Exception e){
                         e.printStackTrace();
